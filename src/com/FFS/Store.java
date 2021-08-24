@@ -18,18 +18,21 @@ public class Store {
     }
 
     public void addInventory(Product product) {
+        addInventory (product);
     }
 
     //X Beverage Version
-    public void addInventory() {
+    public void addInventory(Product prod) {
         Beverage bev = new Beverage ();
-        addInventory ( bev );
+        addInventory (bev);
     }
+
     //X Fruit Version
     public void addInventory() {
         Fruit fruit = new Fruit ();
         addInventory (fruit);
     }
 
+    //O Have add convert
 
 }
