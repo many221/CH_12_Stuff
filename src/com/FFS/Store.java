@@ -18,21 +18,21 @@ public class Store {
     }
 
     public void addInventory(Product product) {
-        addInventory (product);
+      inventory.add ( product );
     }
 
     //X Beverage Version
-    public void addInventory(Product prod) {
-        Beverage bev = new Beverage ();
+    public void addInventory(String name, int price, String id, String description, int volume, int volumeUnit) {
+        Beverage bev = new Beverage (name,price,id,description,volume,volumeUnit);
         addInventory (bev);
     }
 
     //X Fruit Version
-    public void addInventory() {
-        Fruit fruit = new Fruit ();
+    public void addInventory(String name, int price, String id, String description, int hardness) {
+        Fruit fruit = new Fruit (name,price,id,description,hardness);
         addInventory (fruit);
     }
 
-    //O Have add convert
+
 
 }

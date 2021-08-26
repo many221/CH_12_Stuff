@@ -14,11 +14,16 @@ public class Main {
       Beverage prod5 = new Beverage ("Oranges",2_99,"3456","Pulp",2,1 );
 
 
-        System.out.println (prod1);
-        System.out.println (prod2);
-        System.out.println (prod3);
-        System.out.println (prod4);
-        System.out.println (prod5);
+//        System.out.println (prod1);
+//        System.out.println (prod2);
+//        System.out.println (prod3);
+//        System.out.println (prod4);
+//        System.out.println (prod5);
+
+        Store ffs = new Store ( "Felicia's Fruit Stand" );
+
+        ffs.addInventory ( prod1 );
+        ffs.toString ();
 
     }
 }
